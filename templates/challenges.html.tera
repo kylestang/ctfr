@@ -6,7 +6,7 @@
 <div class="flex flex-wrap gap-8 p-20">
   {% for chal in challenges %}
   <div class="w-1/5 flex-grow-0 bg-slate-300 p-8 rounded-2xl">
-    <div class="flex items-center justify-center h-full">{{ chal.name }}</div>
+    <div class="flex items-center justify-center h-full text-center">{{ chal.name }}</div>
   </div>
   {% endfor %}
 </div>
