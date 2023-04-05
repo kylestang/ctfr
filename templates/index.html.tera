@@ -1,0 +1,9 @@
+{% extends "base" %}
+
+{% block title %}Welcome{% endblock title %}
+
+{% block content %}
+<div class="flex justify-center items-center h-screen">
+  <h1 class="text-3xl text-center">Hello {{ foo }}, welcome to <b>ctfr</b></h1>
+</div>
+{% endblock content %}
