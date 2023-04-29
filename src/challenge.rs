@@ -4,6 +4,6 @@ use serde::Serialize;
 
 #[derive(Queryable, Insertable, Serialize)]
 pub struct Challenge {
-    pub id: i32,
-    pub name: String,
+    id: i32,
+    name: String,
 }

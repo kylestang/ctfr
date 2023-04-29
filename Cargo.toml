@@ -6,11 +6,13 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-diesel = { version = "2.0.3", features = ["mysql", "r2d2"] }
-rocket = { version = "=0.5.0-rc.3", features = ["json"] }
-rocket_dyn_templates = { version = "=0.1.0-rc.3", features = ["tera"] }
-rocket_sync_db_pools = { version = "=0.1.0-rc.3", features = [
-    "diesel_mysql_pool",
-] }
+diesel = { version = "2.0.3", features = ["mysql"] }
 dotenvy = "0.15"
 serde = { version = "1.0", features = ["derive"] }
+axum = "0.6"
+tera = "1"
+tokio = { version = "1.0", features = ["full"] }
+deadpool-diesel = { version = "0.4.1", features = ["mysql"] }
+# minify-html-onepass = "0.10.8"
+anyhow = "1.0"
+minify-html-onepass = { path = "/home/kyle/Nextcloud/Code/minify-html/rust/onepass" }

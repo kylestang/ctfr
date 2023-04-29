@@ -10,8 +10,11 @@ diesel::table! {
 diesel::table! {
     users (id) {
         id -> Integer,
-        name -> Nullable<Text>,
+        name -> Text,
     }
 }
 
-diesel::allow_tables_to_appear_in_same_query!(challenges, users,);
+diesel::allow_tables_to_appear_in_same_query!(
+    challenges,
+    users,
+);
